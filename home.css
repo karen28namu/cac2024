@@ -1,0 +1,223 @@
+:root{
+ --fondo: #777373;
+ --principal: #242424;
+ --texto-blanco: #FFFFFF;
+ --nav-a: #746d6d;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.raya{
+    margin: 0 auto;
+    width: 60vw;
+    margin-top: 20vh;
+    border: 1px solid var(--principal);
+    opacity: 1;
+}
+body a{
+    text-decoration: none;
+    list-style: none;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+/*-------------header---------------*/
+
+header{
+    padding: 30px 0;
+    background-color: var(--principal);
+}
+header .logo{
+    color: var(--texto-blanco);
+    font-size: 30px;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    color: var(--nav-a);
+    margin-right: 15px;
+    font-weight: bold;
+}
+header nav a:hover{
+    color: var(--texto-blanco);
+}
+
+/*-------------fin header---------------*/
+
+/*----------banner-----------------*/
+.banner-taylor{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: var(--texto-blanco);
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) ),url(imagenes/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+.banner-taylor .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.banner-taylor .descripcion{
+    
+}
+/*-------------fin banner-----------*/
+
+
+/*----------------buscador-----------------*/
+.buscador{
+    background-color: var(--fondo);
+    text-align: center;
+    height: 50vh;
+    color: var(--texto-blanco);
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+/*SELECTOR AVANZADO*/
+/* hijo directo: > */
+/* hermano adyacenete: + */
+/* descendiente:  */
+.buscador > h2 + form{
+    padding-top: 6vh;
+}
+.barrabuscadora{
+    padding: 2vh 3vh;
+    text-transform: capitalize;
+    border-radius: 25px;
+    width: 40vw;
+    border: none;
+}
+.botombuscar{
+    padding: 2vh 3vh;
+    border-radius: 25px;
+    background-color: var(--principal);
+    color: var(--texto-blanco);
+    border: 2px solid white;
+}
+.botombuscar:hover{
+    background-color: var(--botomfondo);
+    color: var(--texto-blanco);
+}
+.raya{
+    margin: 0 auto;
+    width: 60vw;
+    margin-top: 20vh;
+    border: 1px solid var(--principal);
+    opacity: 1;
+}
+/*----------------fin buscador-------------*/
+
+
+/*-----------------eras--------------------*/
+.eras{
+    background-color: var(--fondo);
+}
+.eras{
+    background-color: var(--fondo);
+    text-align: center;
+    color: var(--texto-blanco);
+    padding-top: 10vh;
+}
+.eras a{
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+.eras h2{
+    padding-bottom: 5px;
+}
+
+/*----------------fin eras------------------*/
+
+ /*-------------prliculas*------------------/
+.destacadas{
+    background-color: var(--fondo);
+    padding-top: 5vh;
+}
+.container-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.container-titulo-controles h2{
+    color: var(--texto-blanco);
+}
+.container-titulo-controles .indicadores button{
+    background: var(--texto-blanco);
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+.container-titulo-controles .indicadores button:hover,
+.container-titulo-controles .indicadores button.active{
+    background-color: var(--principal);
+}
+
+
+.peliculas-destacadas{
+    padding: 70px;
+}
+.peliculas-destacadas .container-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*flechas*/
+.peliculas-destacadas .container-principal .flecha-izquierda, .peliculas-destacadas .container-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: var(--texto-blanco);
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.peliculas-destacadas .container-principal .flecha-izquierda:hover, .peliculas-destacadas .container-principal .flecha-derecha:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+.peliculas-destacadas .container-principal .flecha-izquierda{
+    left: 0;
+}
+.peliculas-destacadas .container-principal .flecha-derecha{
+    right: 0;
+}
+/*fin flechas*/
+
+.peliculas-destacadas .container-carrusel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.peliculas-destacadas .container-carrusel .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.peliculas-destacadas .container-carrusel .carrusel .peliculas{
+    min-width: 20%;
+    transition: .3s ease all;
+    border-bottom: 5px 5px 10px rgba(0, 0, 0, .3);
+    padding-right: 35px;
+}
+
+
+ /*-------------fin peliculas---------------*/
